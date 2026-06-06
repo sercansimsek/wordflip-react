@@ -1,8 +1,7 @@
 import "./App.css";
-import { fetchRandomWords } from "./utils/fetchRandomWords";
-function App() {
-  
-  return <div>App</div>;
-}
+import DisplayRandomWords from "./components/DisplayRandomWords";
 
+function App() {
+  return <DisplayRandomWords />;
+}
 export default App;
