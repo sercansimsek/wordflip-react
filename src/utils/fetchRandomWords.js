@@ -1,6 +1,6 @@
-export const fetchRandomWords = async () => {
-  const url =
-    "https://random-words-api.kushcreates.com/api?language=en&words=10";
+export const fetchRandomWords = async (count = 1) => {
+  const url = `https://random-words-api.kushcreates.com/api?language=en&words=${count}`;
+
   try {
     const response = await fetch(url);
     const data = await response.json();
